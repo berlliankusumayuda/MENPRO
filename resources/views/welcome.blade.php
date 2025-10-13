@@ -9,7 +9,6 @@
 </head>
 <body>
     <h1>Halo Laravel 👋</h1>
-
     <livewire:counter />
 
     @livewireScripts
