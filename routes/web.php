@@ -6,5 +6,5 @@ Route::get('/', function () {
     return view('login');
 });
 Route::get('/home', function () {
-    return view('dashborad');
+    return view(view: 'dashboard');
 });

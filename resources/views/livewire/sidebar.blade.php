@@ -6,25 +6,25 @@
         <div class="bar bar--middle"></div>
         <div class="bar bar--bottom"></div>
         </label>
-        <h2>Gergaji</h2>
+        <h1>Gergaji</h1>
     </div>
-   <div class="sidebar-content">
-    <div class="beranda">
+<div class="sidebar-content">
+    <div class="sidebar-item">
         <a href="">Beranda</a>
     </div>
-    <div class="tabel-warga">
+    <div class="sidebar-item">
         <a href="">Tabel Warga</a>
     </div>
-    <div class="data-warga">
+    <div class="sidebar-item">
         <a href="">Data Warga</a>
     </div>
-    <div class="biodata">
+    <div class="sidebar-item">
         <a href="">Biodata</a>
     </div>
-    <div class="grafik">
+    <div class="sidebar-item">
         <a href="">Grafik</a>
     </div>
-    <div class="logout">
+    <div class="sidebar-item">
         <a href="">logout</a>
     </div>
 </div>
