@@ -29,3 +29,26 @@
     </div>
 </div>
 </div>
+
+<script>
+  const checkbox = document.getElementById('checkbox');
+  const sidebar = document.querySelector('.sidebar');
+
+  // === Saat halaman dimuat ===
+  const savedState = localStorage.getItem('sidebarCollapsed');
+  if (savedState === 'true') {
+    checkbox.checked = true;
+    sidebar.classList.add('collapsed');
+  }
+
+  // === Saat user klik toggle ===
+  checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+      sidebar.classList.add('collapsed');
+      localStorage.setItem('sidebarCollapsed', 'true');
+    } else {
+      sidebar.classList.remove('collapsed');
+      localStorage.setItem('sidebarCollapsed', 'false');
+    }
+  });
+</script>
