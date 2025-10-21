@@ -1,12 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --sidebar-bg: #092235;
+    --sidebar-text: #FFFFFF;
+    --slider-text-dark: #000000;
+    --sidebar-button: #69BFF8;
+    --font-main: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+
+.sidebar:has(#checkbox:checked){
+    width: 240px;
+    min-height: 100vh;
+    height: 100%;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    font-family: var(--font-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    transition: all .5s ease;
+}
+.sidebar:has(#checkbox:checked) .sidebar_header h1{
+    display: block;
+    visibility: inherit;
+    font-size: 1.5rem;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+.sidebar:has(#checkbox:checked) .sidebar_header{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+    /* background-color: violet; */
+}
+
+.sidebar:has(#checkbox:checked) .sidebar-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    opacity: 1;
+    transform: translatex(0px);
+    transition: all 0.5s ease;
+}
+
+.sidebar:has(#checkbox:checked) .sidebar-item{
+    width: 160px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--sidebar-button);
+    text-align: center;
+    font-weight: 500;
+    opacity: 1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border: 2px solid var(--sidebar-text-dark);
+    transform: translatex(0);
+    transition: all 0.3s ease;
+}
+
+.sidebar-content{
+    height: max-content;
+    transform: translateX(-500px);
+    transition: all 0.3s ease;
+    opacity: 0;
+    /* background-color: violet; */
+}
+.sidebar-item{
+    transition: all 0.3s ease;
+    width: 0;
+    opacity: 0;
+    transform: translatex(-400px);
+    overflow: hidden;
+}
+
+.sidebar:has(#checkbox:checked) .sidebar-content a{
+    color: var(--slider-text-dark);
+    text-decoration: none;
+    font-size: 1rem;
+    width: auto;
+    font-weight: 600;
+    opacity: 1;
+    display: block;
+    transform: translatex(0);
+    transition: all 0.3s ease;
+}
+
+.sidebar-content a{
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translatex(-400px);
+}
+
+
+.sidebar {
+    width: 70px;
+    transition: all .55s ease;
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    font-family: var(--font-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.sidebar_header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.sidebar_header h1{
+    visibility: hidden;
+    font-size: 0;
+    transition: all 0.2s ease;
+}
+
+
 #checkbox {
   display: none;
 }
 
 .toggle {
   position: relative;
-  width: 40px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
-  margin: auto;
+  /* background-color: #c12f2f; */
+  margin: 0;
   display: block;
   height: calc(4px * 3 + 11px * 2);
 }
@@ -16,8 +159,8 @@
   left: 0;
   right: 0;
   height: 4px;
-  border-radius: calc(4px / 2);
-  background: #7b52b9;
+  border-radius: calc(6px / 2);
+  background: var(--sidebar-text);
   color: inherit;
   opacity: 1;
   transition: none 0.35s cubic-bezier(.5,-0.35,.35,1.5) 0s;
@@ -26,7 +169,7 @@
 /***** Spin Animation *****/
 
 .bar--top {
-  bottom: calc(50% + 11px + 4px/ 2);
+  bottom: calc(50% + 6px + 4px/ 2);
   transition-property: bottom,transform;
   transition-delay: calc(0s + 0.35s),0s;
 }
@@ -38,7 +181,7 @@
 }
 
 .bar--bottom {
-  top: calc(50% + 11px + 4px/ 2);
+  top: calc(50% + 6px + 4px/ 2);
   transition-property: top,transform;
   transition-delay: calc(0s + 0.35s),0s;
 }
@@ -60,3 +203,6 @@
   transform: rotate(225deg);
   transition-delay: 0s,calc(0s + 0.35s);
 }
+
+
+
