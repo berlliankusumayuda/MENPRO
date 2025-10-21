@@ -9,7 +9,11 @@
 </head>
 <body>
     <livewire:sidebar />
-
+    <livewire:hero />
+    <livewire:datawarga />
+    <livewire:biodata />
+    <livewire:grafik />
+    <livewire:tablewarga />
     @livewireScripts
 </body>
 </html>
