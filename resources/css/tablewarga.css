@@ -1,0 +1,196 @@
+/* ==============================
+   Container Utama
+   ============================== */
+.daftararga {
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.daftararga h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* ==============================
+   Search Bar
+   ============================== */
+.search {
+    padding: 0;
+    margin: 10px 20px;
+    width: 400px;
+    position: relative;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid #092235;
+}
+
+.search > input[type="text"] {
+    width: 65%;
+    height: calc(100% - 2px);
+    border-radius: 20px 0 0 20px;
+    text-indent: 20px;
+    border: 0;
+    font-size: 1.175rem;
+    outline: 0;
+}
+
+.search .btn-search {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border: 0;
+    background-color: transparent;
+    width: 150px;
+    border-radius: 0 20px 20px 0;
+}
+
+.btn-search:hover {
+    background-color: #B6D4F0;
+    cursor: pointer;
+}
+
+/* ==============================
+   Tombol Download
+   ============================== */
+.btn-dl {
+    position: absolute;
+    bottom: 111px;
+    right: 100px;
+    height: 50px;
+    border-radius: 15px;
+    width: 200px;
+    background-color: #1E5176;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+
+.btn-dl:hover{
+    background-color: #2a6ca0;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+/* ==============================
+   Scroll Container
+   ============================== */
+#scrollDiv {
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    background-color: #f0f4f7;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding-left: 0;
+}
+
+/* ==============================
+   Table
+   ============================== */
+#tabelWarga {
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 1200px;
+    width: max-content;
+    background-color: #efefef;
+    table-layout: fixed;
+}
+
+
+#tabelWarga thead {
+    background-color: #1E5176;
+    color: #ffffff;
+}
+
+#tabelWarga th, #tabelWarga td {
+    border: 1px solid #000;
+    min-width: 150px;
+    width: max-content;
+    text-align: left;
+    padding: 5px;
+    scroll-snap-align: start; /* untuk snap per kolom */
+}
+
+/* ==============================
+   Sticky Columns
+   ============================== */
+.sticky-col {
+    position: sticky;
+    z-index: 4; /* kolom biasa di bawah sticky */
+    background-color: #efefef;
+}
+th.sticky-col {
+    background-color: #1E5176 !important;
+    z-index: 4; /* header paling atas */
+}
+
+/* Posisi sticky per kolom */
+.col1 {
+    left: 0;
+}
+.col2 {
+    left: 160px;
+}
+.col3 {
+    left: 322px;
+}
+
+/* ==============================
+   Hover & UX
+   ============================== */
+#tabelWarga tbody tr:hover {
+    background-color: #d8ecff;
+    transition: background-color 0.2s ease-in-out;
+}
+/* Efek hover untuk seluruh baris termasuk sticky */
+#tabelWarga tbody tr:has(td:hover),
+#tabelWarga tbody tr:hover {
+    background-color: #d8ecff;
+}
+
+/* Warna untuk cell sticky ikut berubah juga */
+#tabelWarga tbody tr:has(td:hover) .sticky-col,
+#tabelWarga tbody tr:hover .sticky-col {
+    background-color: #d8ecff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+/* ==============================
+   Pagination
+   ============================== */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 5px;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e4e4e4;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pagination button:hover {
+    background-color: #cbe3ff;
+}
+
+.pagination button:disabled,
+.pagination button.active {
+    background-color: #1E5176;
+    color: #fff;
+    font-weight: bold;
+    cursor: default;
+}
+

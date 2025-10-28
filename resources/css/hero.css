@@ -1,0 +1,113 @@
+:root{
+    --component: #1E5176;
+    --text-main: #010101;
+    --text-secondary: #ffffff;
+    --scroll-button: #1e51764d;
+    --scroll-bg: #95c7e85b;
+    --font: 'Poppins', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+    font-family: var(--font);
+    color: var(--text-main);
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.hero .main-content{
+    width: 80%;
+    height: auto;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 30px;
+}
+
+.hero .main-content h2{
+    font-size: 2.5rem;
+    padding: 0%;
+    margin: 0;
+}
+
+.hero .main-content .box-group{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.box-group .box{
+    width: 360px;
+    height: 240px;
+    color: var(--text-secondary);
+    background-color: var(--component);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box h3{
+    font-size: 1rem;
+}
+.box h1{
+    font-size: 2.5rem;
+    color: var(--text-secondary);
+    margin: 10px 0 0 0;
+}
+
+.box-history{
+    width: 80%;
+    height: auto;
+    min-height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--component);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.box-history h4{
+    color: var(--text-secondary);
+    margin:0;
+    padding-left: 60px;
+}
+
+.box-history .history{
+    background-color: rgb(94, 131, 158);
+    width:  calc(100% - 80px);
+    margin: 0 40px;
+    height: 200px;
+    border-radius: 20px;
+    overflow-y: auto;
+    padding: 5px 0;
+}
+
+.history p{
+    text-indent: 20px;
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+

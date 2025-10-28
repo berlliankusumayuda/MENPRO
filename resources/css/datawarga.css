@@ -1,0 +1,178 @@
+.datawarga{
+    overflow-y: auto !important;
+}
+
+.datawarga h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+.datawarga h2{
+    text-align: center;
+    font-size: 1.75rem;
+    margin: 0;
+    padding: 0;
+}
+
+.form-datawarga{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding: 20px;
+    width: 80%;
+    height: auto;
+    background-color: #092235;
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wargaForm{
+    width: 100%;
+    height: 100%;
+    /* background-color: turquoise; */
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 80px;
+}
+
+.wargaForm .input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-transform: uppercase;
+}
+
+.input-range{
+        display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-transform: uppercase;
+}
+
+.input-range label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.input-group label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.input-group input, .input-group select , .input-group textarea{
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+    font-size: 1rem;
+    resize: none;
+}
+.jenis-kelamin{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+/* From Uiverse.io by Yaya12085 */
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #EEE;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  height: 36px;
+  font-size: 14px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  width: 100%;
+  height: 36px;
+  color: rgba(51, 65, 85, 1);
+  transition: all .15s ease-in-out;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #127daf6f;
+  font-weight: 600;
+  transition: all 0.25s ease-out;
+  width: 100%;
+  z-index: 2;
+  border-radius: 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.radio-inputs .radio input:checked + .name::after{
+    content: "✅";
+    padding-left: 0.5rem;
+    transition: all 0.25s ease-out;
+}
+
+.btn-form{
+    position: absolute;
+    width: 60% ;
+    bottom: 0;
+    left: 20%;
+    height: 50px;
+    border: 3px solid #ffffff;
+    background-color: #037cb4;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: all 0.2s ease;
+}
+.btn-form:hover{
+    background-color: #2fa6de;
+    cursor: pointer;
+}
+
+.btn-form:active{
+    transform: scale(0.98);
+    font-size: 1.2rem;
+}
+
+/* range */
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #037cb4; /* Warna utama (modern browsers) */
+}
+
+/* Jalur (track) */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Tombol (thumb) */
+input[type="range"]::-webkit-slider-thumb {
+  cursor: grab;
+  margin-top: -6px; /* biar sejajar tengah */
+}
+
