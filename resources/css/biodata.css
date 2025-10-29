@@ -17,8 +17,8 @@
 
 .biodata-item {
   display: flex;
-  justify-content: center;
-  border-bottom: 1px dashed #ccc;
+  width: 100%;
+  border-bottom: 1px dashed #999dc3;
   padding: 10px 0;
 }
 
@@ -30,4 +30,25 @@
 
 .biodata-item strong {
   color: #1E5176;
+}
+
+
+.btn-bio {
+  background-color: #1E5176;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  margin: 0 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: 0.2s;
+}
+
+.btn-bio:hover {
+  background-color: #2b6da3;
+}
+
+.btn-bio.active {
+  background-color: #14405d;
 }
