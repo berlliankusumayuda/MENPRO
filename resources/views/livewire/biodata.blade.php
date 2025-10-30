@@ -12,12 +12,6 @@
             <p><strong>No. Kartu Keluarga:</strong> 1234567890123456</p>
         </div>
 
-  <!-- Tombol navigasi -->
-  <div style="text-align:center; margin:20px 0;">
-    <button class="btn-bio active" data-target="umum">Umum</button>
-    <button class="btn-bio" data-target="status">Status</button>
-    <button class="btn-bio" data-target="kesehatan">Kesehatan</button>
-  </div>
 
   <!-- === Bagian UMUM === -->
   <div class="bio-section" id="umum">
@@ -40,11 +34,8 @@
       <p><strong>Jenis Kelamin:</strong> Laki-Laki</p>
       <p><strong>Status Bermukim:</strong> Hidup</p>
     </div>
-  </div>
 
-  <!-- === Bagian STATUS === -->
-  <div class="bio-section" id="status" style="display:none;">
-    <div class="biodata-item">
+     <div class="biodata-item">
       <p><strong>Pendidikan Terakhir:</strong> S1/D4</p>
       <p><strong>Pekerjaan:</strong> Mahasiswa</p>
     </div>
@@ -53,10 +44,7 @@
       <p><strong>Status Kawin:</strong> Belum Menikah</p>
       <p><strong>Status Merokok:</strong> Tidak Merokok</p>
     </div>
-  </div>
 
-  <!-- === Bagian KESEHATAN === -->
-  <div class="bio-section" id="kesehatan" style="display:none;">
     <div class="biodata-item">
       <p><strong>Asuransi Kesehatan:</strong> BPJS Kesehatan</p>
       <p><strong>BPJS Ketenagakerjaan:</strong> Tidak Memiliki</p>

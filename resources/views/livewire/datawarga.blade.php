@@ -29,7 +29,7 @@
                 <div class="radio-inputs">
                     <label class="radio" for="jns-kel1">
                         <input type="radio" name="kelamin" checked id="jns-kel1" value="L">
-                        <span class="name">Laki-Laki</span>
+                        <span class="name">LAKI-LAKI</span>
                     </label>
                     <label class="radio" for="jns=kel2">
                         <input type="radio" name="kelamin" id="jns=kel2" value="P">
@@ -41,26 +41,22 @@
                 <label for="golongan_darah">Golongan Darah</label>
                 <select id="golongan_darah" name="golongan_darah">
                     <option value="">-- Pilih Golongan Darah --</option>
-                    <option value="A+">A+</option>
-                    <option value="A-">A-</option>
-                    <option value="B+">B+</option>
-                    <option value="B-">B-</option>
-                    <option value="AB+">AB+</option>
-                    <option value="AB-">AB-</option>
-                    <option value="O+">O+</option>
-                    <option value="O-">O-</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="AB">AB</option>
+                    <option value="O">O</option>
                 </select>
             </div>
             <div class="input-group">
                 <label for="agama">Agama</label>
                 <select id="agama" name="agama">
                     <option value="">-- Pilih Agama --</option>
-                    <option value="Islam">Islam</option>
-                    <option value="Kristen">Kristen</option>
-                    <option value="Katolik">Katolik</option>
-                    <option value="Hindu">Hindu</option>
-                    <option value="Buddha">Buddha</option>
-                    <option value="Konghucu">Konghucu</option>
+                    <option value="Islam">ISLAM</option>
+                    <option value="Kristen">KRISTEN</option>
+                    <option value="Katolik">KATOLIK</option>
+                    <option value="Hindu">HINDU</option>
+                    <option value="Budha">BUDHA</option>
+                    <option value="Konghucu">KONGHUCU</option>
                 </select>
             </div>
             <div class="input-group">
@@ -71,6 +67,8 @@
                 <label for="pendidikan_terakhir">Pendidikan Terakhir</label>
                 <select id="pendidikan_terakhir" name="pendidikan_terakhir">
                     <option value="">-- Pilih Pendidikan Terakhir --</option>
+                    <option value="Belum Sekolah">BELUM SEKOLAH</option>
+                    <option value="TK">TK</option>
                     <option value="SD">SD</option>
                     <option value="SMP">SMP</option>
                     <option value="SMA/SMK">SMA/SMK</option>
@@ -120,11 +118,7 @@
                 <input type="text" id="riwayat_penyakit" name="riwayat_penyakit" placeholder="ketik disini">
             </div>
             <div class="input-group">
-                <label for="cek_kesehatan">Cek Kesehatan</label>
-                <input type="text" id="cek_kesehatan" name="cek_kesehatan" placeholder="ketik disini">
-            </div>
-            <div class="input-group">
-                <label for="cek_kesehatan">Cek Kesehatan</label>
+                <label for="cek_kesehatan">Cek Kesehatan Rutin</label>
                 <select name="cek_kesehatan" id="cek_kesehatan">
                     <option value="">-- Pilih Asuransi Kesehatan --</option>
                     <option value="SETIAP BULAN">SETIAP BULAN</option>
@@ -138,6 +132,7 @@
                 <label for="asuransi">Asuransi Kesehatan</label>
                 <select name="asuransi" id="asuransi">
                     <option value="">-- Pilih Asuransi Kesehatan --</option>
+                    <option value="Tidak Memiliki">TIDAK MEMILIKI</option>
                     <option value="BPJS KESEHATAN">BPJS KESEHATAN</option>
                     <option value="BPJS PRIBADI">BPJS PRIBADI</option>
                     <option value="ASURANSI SWASTA">ASRANSI SWASTA</option>
@@ -156,6 +151,12 @@
                     </label>
                 </div>
             </div>
+            
+            <div class="input-group">
+                    <label for="jumlah_anak">Jumlah Anak</label>
+                    <input type="number" id="jumlah_anak" name="jumlah_anak" min="0" placeholder="ketik disini">
+                </div>
+
             <div class="input-group">
                 <p class="jenis-kelamin">KEINGINAN MENAMBAH ANAK</p>
                 <div class="radio-inputs">
@@ -170,11 +171,7 @@
                 </div>
             </div>
             <div class="input-group">
-                <label for="jumlah_anak">Jumlah Anak</label>
-                <input type="number" id="jumlah_anak" name="jumlah_anak" min="0" placeholder="ketik disini">
-            </div>
-            <div class="input-group">
-                <label for="alat_kontrasepsi">Alat Kontrsepsi</label>
+                <label for="alat_kontrasepsi">Alat Kontrasepsi</label>
                 <select id="alat_kontrasepsi" name="alat_kontrasepsi">
                     <option value="">-- Pilih alat kontrasepsi --</option>
                     <option value="KONDOM">KONDOM</option>
@@ -184,11 +181,6 @@
                     <option value="IMPLANT">IMPLANT</option>
                     <option value="STERIL">STERIL</option></option>
                 </select>
-            </div>
-            <div class="input-range">
-                <label for="usia">Range Usia</label>
-                <input type="range" id="usia" name="usia" min="0" max="90">
-                <span>Usia: <span id="usiaValue">0</span> tahun</span>
             </div>
             <button type="submit" class="btn-form"> SIMPAN </button>
         </form>
