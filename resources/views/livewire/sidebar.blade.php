@@ -14,13 +14,13 @@
                     <a href="#" wire:click="$dispatch('change-page', { page: 'hero' })">Beranda</a>
                 </div>
                 <div class="sidebar-item">
-                    <a href="#" wire:click="$dispatch('change-page', { page: 'tablewarga' })">Tabel Warga</a>
-                </div>
-                <div class="sidebar-item">
                     <a href="#" wire:click="$dispatch('change-page', { page: 'datawarga' })">Data Warga</a>
                 </div>
                 <div class="sidebar-item">
                     <a href="#" wire:click="$dispatch('change-page', { page: 'biodata' })">Biodata</a>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#" wire:click="$dispatch('change-page', { page: 'tablewarga' })">Tabel Warga</a>
                 </div>
                 <div class="sidebar-item">
                     <a href="#" wire:click="$dispatch('change-page', { page: 'grafik' })">Grafik</a>
